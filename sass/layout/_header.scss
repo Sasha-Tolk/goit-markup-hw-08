@@ -1,34 +1,78 @@
 .logo {
   font-family: Raleway, sans-serif;
   color: var(--accent-color);
-  @include font(26px, 700, 32px);
-
-  margin: 0px auto 0px 0px;
+  @include font(24px, 700, 28px);
 
   &--dark {
     color: var(--logo-color);
   }
 }
 
+@media screen and (min-widt: 1200px) {
+  .logo {
+    @include font(26px, 700, 31px);
+    margin: 0px auto 0px 0px;
+  }
+}
 .header {
   border-bottom: 1px solid var(--border-color);
-  &__div {
-    display: flex;
-  }
-  & li + li {
-    margin-left: 50px;
-  }
-  &_list {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
-  }
+}
+.header_list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    &__div {
+      display: flex;
+      max-width: 768px;
+    }
+    &-item {
+      margin-right: 50px;
+    }
+    &_list {
+      display: flex;
+      align-items: left;
+      margin-left: 88px;
+    }
 
-  &_list-light {
-    color: var(--pretitle-text-color);
-    @include font(14px, 500, 16px);
-    letter-spacing: 0.02em;
-    margin: 0px 0px 0px auto;
+    &_list-light {
+      display: block;
+      color: var(--pretitle-text-color);
+      @include font(12px, 500, 14px);
+      letter-spacing: 0.02em;
+      margin: 21px auto 21px 84px;
+    }
+  }
+  .adress-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__div {
+      display: flex;
+      max-width: 1200px;
+    }
+    & li + li {
+      margin-left: 50px;
+    }
+    &_list {
+      display: flex;
+      align-items: center;
+      margin-left: 93px;
+    }
+
+    &_list-light {
+      color: var(--pretitle-text-color);
+      @include font(14px, 500, 16px);
+      letter-spacing: 0.02em;
+      margin: 0px 0px 0px auto;
+      vertical-align: middle;
+    }
+  }
+  .adress-item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
