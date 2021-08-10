@@ -1,0 +1,29 @@
+.modal__button-closed {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px auto;
+  
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--main-color);
+    cursor: pointer;
+  
+    background-image: url(../icons/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-image: url(../icons/crossblue.svg);
+    }
+  }
+  
+  .modal__button {
+    padding: 10px 55px;
+    box-shadow: 0px 5px 1.5px -1.5px rgba(0, 0, 0, 0.14);}

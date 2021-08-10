@@ -1,0 +1,24 @@
+.form {
+  margin: 12px 10px 0px 0px;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+
+    background-color: inherit;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+
+    padding-left: 16px;
+  }
+  &__button {
+    padding: 8px 27px 8px 27px;
+    margin: 49px 0px 38px 0px;
+    max-height: 50px;
+  }
+}
+
+.buttton-icon {
+  margin: 0px 0px 0px 9px;
+  vertical-align: middle;
+}

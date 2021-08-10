@@ -1,0 +1,106 @@
+.our-team {
+  background-color: var(--button-portfolio-color);
+  @include font(16px, 400, 19px);
+
+<<<<<<< HEAD
+  padding: 60px 0px;
+=======
+  padding-top: 94px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 94px;
+>>>>>>> fcac1488e58d30481bada83382c6bf3617d38ab0
+
+  &__photos {
+    background-color: var(--main-color);
+
+<<<<<<< HEAD
+    width: 450px;
+=======
+    width: 270px;
+>>>>>>> fcac1488e58d30481bada83382c6bf3617d38ab0
+    text-align: center;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.14),
+      0.5px 3px 3px 0.5px rgba(0, 0, 0, 0.12),
+      -0.5px 3px 3px 0.5px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+<<<<<<< HEAD
+
+    &:not(:nth-last-child(1)) {
+      margin-bottom: 30px;
+    }
+  }
+  &__subtitle {
+    @include font(16px, 500, 19px);
+  }
+  &__description {
+    padding: 30px 0px 24px 0px;
+    text-align: center;
+
+  }
+
+  &__text {
+    color: var(--pretitle-text-color);
+
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+ 
+}
+@media screen and (min-width:768px) {
+  .our-team {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }}
+  .our-team__photos {
+    display: inline-block;
+    flex-basis: calc((100%-30px) / 2);
+  
+    &:not(:nth-last-child(1)) {
+      margin-right: 30px;
+    }
+  }
+  .our-team{
+  width: 354px;
+}}
+
+@media screen and (min-width:768px) {
+  .our-team {
+    &__list {
+      display: flex;
+    }
+}}
+=======
+  }
+  &__subtitle {
+    margin-top: 30px;
+    @include font(16px, 500, 19px);
+  }
+  &__description {
+    max-width: 200px;
+    margin: 30px;
+  }
+
+  &__text {
+    color: var(--pretitle-text-color);
+
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  &__list {
+    display: flex;
+  }
+}
+
+.our-team__photos {
+  display: inline-block;
+  flex-basis: calc((100%-90px) / 4);
+
+  &:not(:nth-last-child(1)) {
+    margin-right: 30px;
+  }
+}
+>>>>>>> fcac1488e58d30481bada83382c6bf3617d38ab0

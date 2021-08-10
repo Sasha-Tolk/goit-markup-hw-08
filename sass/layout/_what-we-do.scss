@@ -1,0 +1,37 @@
+.what-we-do {
+  display: none;
+}
+@media screen and (min-width: 1200px){
+.what-we-do {
+  display: block;
+  padding: 0px 0px 94px 0px;
+
+    &__list {
+        display: flex;
+      }
+
+    &__subtitle {
+        color: var(--main-color);
+        text-transform: uppercase;
+        @include font(14px, 500, 16px);
+        background-color: rgba(47, 48, 58, 0.8);
+        padding: 27px 0px;
+        text-align: center;
+      
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+      }
+  }
+  
+  .what-we-do__item {
+    flex-basis: calc((100% - 60px) / 3);
+  
+    position: relative;
+
+    &:not(:nth-last-child(1)) {
+        margin-right: 30px;
+      }
+  }
+  
+}

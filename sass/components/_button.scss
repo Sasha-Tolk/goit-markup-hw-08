@@ -1,0 +1,23 @@
+.button {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include font(16px, 700, 30px);
+  letter-spacing: 0.06em;
+
+  display: block;
+  margin: auto;
+  padding: 6px 32px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  & :hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+    border-color: transparent;
+  }
+}
