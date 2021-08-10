@@ -16,12 +16,17 @@
 }
 .header {
   border-bottom: 1px solid var(--border-color);
+  padding: 15px;
 }
 .header_list {
   display: none;
 }
+.burger-icon{
+  margin: 0px 0px 0px auto;
+}
 @media screen and (min-width: 768px) {
   .header {
+    padding: 0px;
     &__div {
       display: flex;
       max-width: 768px;
@@ -50,6 +55,7 @@
 
 @media screen and (min-width: 1200px) {
   .header {
+    padding: 0px;
     &__div {
       display: flex;
       max-width: 1200px;
